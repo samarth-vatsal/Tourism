@@ -1,0 +1,151 @@
+<%- include('partials/header') %>
+
+
+<section class="home" id="home">
+  <div class="content">
+
+    <p>The District known for its Bidri handicraft products</p>
+    <a href="#places" class="btn">Explore Bidar</a>
+  </div>
+
+  <div class="image-container">
+
+    <img src="img/bidar3.jpg" alt="">
+  </div>
+
+</section>
+
+<section class="about" id="about">
+
+  <div class="details">
+    <h2>About Bidar district</h2>
+    <p>Bidar is a hill-top city situated on the deccan plateau,in the north-eastern part of Karnataka
+       state in India. It is the headquarters of the Bidar District.Being located at the farthest of around
+       700 km(430 mi) from the state capital Bengaluru.Owing to its rich heritage, the city has a prominent
+        place in the Archaeological Map of India.</p>
+  </div>
+  <div class="temp">
+    <h2>Temperature</h2>
+  </div>
+
+
+</section>
+
+
+<section class="places" id="places">
+
+    <h1 class="heading">
+          <span>P</span>
+          <span>l</span>
+          <span>a</span>
+          <span>c</span>
+          <span>e</span>
+          <span>s</span>
+          <span>__</span>
+          <span>T</span>
+          <span>o</span>
+          <span>__</span>
+          <span>v</span>
+          <span>i</span>
+          <span>s</span>
+          <span>i</span>
+          <span>t</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/bidar district.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Rangeen mahal</h3>
+                <a href="/book" class="btn">check availablity</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img href="hotel.ejs"src="img/nanak.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> gurudwara nanak jhira sahib </h3>
+
+                <a href="/hotel" class="btn">check availablity</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/bidar-fort.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Bidar fort </h3>
+
+                <a href="#" class="btn">check availablity</a>
+            </div>
+        </div>
+
+
+
+
+
+  </section>
+
+
+<section>
+
+<div id="map">
+
+</div>
+
+
+
+
+
+
+</section>
+
+<!----
+
+<div class="details">
+  <h2>About</h2>
+  <h3>Bidar is a hill-top city situated on the deccan plateau,in the north-eastern part of Karnataka
+     state in India. It is the headquarters of the Bidar District.Being located at the farthest of around
+     700 km(430 mi) from the state capital Bengaluru.Owing to its rich heritage, the city has a prominent
+      place in the Archaeological Map of India.</h3>
+</div>
+
+    <h1 class="heading">
+        <span>P</span>
+        <span>l</span>
+        <span>a</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+        <span>__</span>
+        <span>T</span>
+        <span>o</span>
+        <span>__</span>
+        <span>v</span>
+        <span>i</span>
+        <span>s</span>
+        <span>i</span>
+        <span>t</span>
+    </h1>
+
+---->
+
+<script>
+    function initMap(){
+    var location={lat:15.31  ,lng:75.71 };
+    var map = new google.maps.Map(document.getElementById("map"),{
+      zoom:4,
+      centre:location
+    });
+  }
+
+
+</script>
+
+
+<script async defer src="http://www.google.com/maps/api/js?key=AIzaSyB4KUH6xPe61jHcOuVPxqkjNT3pRfktFyc&callback=initMap">
+
+</script>
+
+
+<%- include('partials/footer') %>
